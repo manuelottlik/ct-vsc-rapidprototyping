@@ -1,0 +1,54 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Helvetica, Arial, sans-serif;
+
+ .container {
+  width: 800px;
+  margin: 50px auto;
+  border: 3px solid lightgray;
+
+
+  header {
+   margin: 50px 25px;
+  }
+
+  nav {
+   display: flex;
+   flex-direction: row;
+   //justify-content: space-around;
+   margin: 50px 0 25px 0;
+
+   a, a:visited, a:active {
+    flex: 1;
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 10px 0;
+    border-bottom: 3px solid lightgrey;
+    &:hover {
+     border-bottom: 3px solid black;
+    }
+   }
+  }
+
+  section {
+   font-size: 1.2em;
+   line-height: 1.3em;
+   text-align: justify;
+   padding: 30px;
+  }
+
+  footer {
+   text-align: right;
+   color: lightgray;
+   font-size: 0.8em;
+   margin: 30px;
+  }
+ }
+}
